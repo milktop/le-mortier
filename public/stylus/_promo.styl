@@ -1,0 +1,72 @@
+.promo
+  width 100%
+  margin 5rem 0 5.5rem
+  display block
+  col(10/10)
+  clearfix()
+  
+  .pull-quote
+    col(7/10)
+    background-image url('../img/pattern.png')
+    background-size cover
+    height 332px
+    background-repeat no-repeat
+    
+    h2
+      font-size 2.8rem
+      text-align center
+      width 70%
+      margin 0 auto
+      vertical-alignment()
+      
+      &:before
+        content ' “ '
+        display block
+        font-family title-font
+        line-height 1rem
+        font-size 3rem
+  
+  .product-teaser
+    col(3/10)
+    background-image url('../img/product.png')
+    height 332px
+    background-repeat no-repeat
+    background-size cover
+    
+    h5
+      text-align center
+      font-size 1.5rem
+      color brand
+      width 50%
+      margin 0 auto
+      line-height 3rem
+      cursor pointer
+      vertical-alignment()
+      
+      &:after
+        content " "
+        background-image url('../img/diamond.png')
+        display block
+        width 15px
+        height 20px
+        background-size cover
+        background-repeat no-repeat
+        margin 0 auto
+        top 25px
+        position relative
+      
+      &:hover
+        &:after
+          content " "
+          background-image url('../img/diamond-fill.png')
+          display block
+          width 15px
+          height 20px
+          background-size cover
+          background-repeat no-repeat
+          margin 0 auto
+          top 25px
+          position relative
+        
+      
+      
