@@ -28,7 +28,7 @@ gulp.task('serve', ['stylus', 'coffee'], function() {
 
   gulp.watch('public/stylus/*.styl', ['stylus']);
   gulp.watch('public/js/*.coffee', ['coffee']);
-  gulp.watch("*.html").on('change', browserSync.reload);
+  gulp.watch("public/*.html").on('change', browserSync.reload);
 });
 
 // Compile Our Stylus
