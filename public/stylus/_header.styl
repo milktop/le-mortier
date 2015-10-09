@@ -1,5 +1,20 @@
 header
-  padding 1rem 0 0
+  padding 1rem 0 0.5rem
   background white
   border-bottom 4px solid brand
   // margin-bottom 1.2rem
+    
+  .inner
+    max-width 940px
+    margin 0 auto
+    border 1px dashed
+    &:after
+      content " "
+      display table
+      clear both
+  
+  .logo
+    float left
+    max-width 250px
+    img
+      width 100%

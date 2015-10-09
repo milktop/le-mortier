@@ -57,72 +57,64 @@ h5 {
   padding: 0 1.25rem 0 1.25rem;
 }
 header {
-  width: 100%;
-  padding: 1rem 0 0;
+  padding: 1rem 0 0.5rem;
+  background: #fff;
+  border-bottom: 4px solid #00304c;
+}
+header .inner {
+  max-width: 940px;
+  margin: 0 auto;
+  border: 1px dashed;
+}
+header .inner:after {
   content: " ";
   display: table;
   clear: both;
 }
 header .logo {
-  margin: 0 auto;
-  text-align: center;
-  width: 185px;
-  margin-bottom: 1rem;
+  float: left;
+  max-width: 250px;
 }
 header .logo img {
   width: 100%;
 }
-header nav {
-  margin: 0 auto;
-  max-width: 780px;
-  border-top: 1px solid #00304c;
-  padding: 1rem 0;
+nav {
+  float: right;
 }
-header nav ul {
+nav ul {
   list-style-type: none;
-  text-align: center;
 }
-header nav ul li {
+nav ul li {
   display: inline;
-  color: #00304c;
-  font-size: 1rem;
-  position: relative;
+  margin-right: 2rem;
+  font-size: 0.95rem;
 }
-header nav ul li.divide {
-  width: 1px;
-  height: 15px;
-  background-color: rgba(0,0,0,0.1);
-  display: inline-block;
-  margin: 0 1.5rem;
-}
-section {
-  border: 1px dashed;
-  padding: 2rem 0 2.5rem;
-}
-section h3 {
-  margin: 0 auto;
-  text-align: center;
-  padding: 2.85rem;
-}
-section .copy-col {
-  -webkit-column-count: 3;
-     -moz-column-count: 3;
-          column-count: 3;
-  width: 70%;
-  margin: 0 auto;
-}
-section .copy-col p {
-  font-size: 1rem;
-  margin-right: 1rem;
-}
-section .copy-col p:last-of-type {
+nav ul li:last-of-type {
   margin-right: 0;
 }
-.image-section {
-  background-image: url("../img/hero.jpg");
-  background-repeat: no-repeat;
-  height: 500px;
+nav ul li .dropdown {
+  position: absolute;
+  left: 0;
   width: 100%;
+  background: #00304c;
+  top: 4.95rem;
+  padding: 0.35rem 0;
+}
+nav ul.sublist {
+  list-style-type: none;
+  margin: 0 auto;
+  text-align: center;
+  color: #fff;
+  position: static;
+}
+nav ul.sublist li {
+  text-align: center;
+  margin-right: 1rem 0;
+  color: #fff;
+  padding: 1rem 0;
+}
+nav ul li.active > dropdown {
+  display: block;
 }
 .featured {
   background-image: url("../img/hero.jpg");

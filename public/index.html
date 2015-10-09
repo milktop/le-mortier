@@ -17,30 +17,36 @@
 <body>
 
   <header>
-    
-    <!-- <div class="wrap content"> -->
-
-      <div class="logo-section">
-        <div class="logo">
-          <img src="img/logo-text.png" alt="Le Mortier Logo"></li>
-        </div>
-
-        <nav class="four">
-          <ul>
-            <li>Home</li>
-            <li>About</li>
-            <li>Experience</li>
-            <li>Another Link</li>
-            <li>Link Here</li>
-            <li>Contact</li>
-          </ul>
-        </nav>
-
-      </div>
-
-    <!-- </div> / wrap -->
-
       
+    <div class="inner">
+      
+      <div class="logo">
+        <img src="img/logo-text.png" alt="Le Mortier Logo"></li>
+      </div> <!-- / logo -->
+
+      <nav>
+        <ul>
+          <li>Home</li>
+          <li>About
+            <div class="dropdown">
+              <div class="inner">
+                <ul class="sublist">
+                  <li>Dropdown One</li>
+                  <li>Dropdown Two</li>
+                  <li>Dropdown Three</li>
+                  <li>Dropdown Four</li>
+                </ul>
+              </div><!-- /inner -->
+            </div><!-- /dropdown -->
+          </li><!-- /about -->
+          <li>Experience</li>
+          <li>Another Link</li>
+          <li>Link Here</li>
+          <li>Contact</li>
+        </ul>
+      </nav>
+
+    </div> <!-- / inner -->
 
   </header>
   
@@ -110,6 +116,10 @@
     </div>
 
   </div>
+
+<!-- scripts -->
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script src="js/scripts.js"></script>
   
 </body>
 </html>
