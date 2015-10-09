@@ -3,7 +3,7 @@
 
   navigationHover = function() {
     return $('header nav ul li').click(function() {
-      return $('nav ul li').addClass('active');
+      return $('.dropdown').toggleClass('active');
     });
   };
 

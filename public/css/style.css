@@ -98,7 +98,16 @@ nav ul li .dropdown {
   width: 100%;
   background: #00304c;
   top: 4.95rem;
-  padding: 0.35rem 0;
+  padding: 0.35rem 0 0.5rem;
+  overflow: hidden;
+  max-height: 0;
+  opacity: 0;
+  transition: max-height 0.3s ease-in-out;
+}
+nav ul li .dropdown.active {
+  max-height: 40rem;
+  overflow: initial;
+  opacity: 1;
 }
 nav ul.sublist {
   list-style-type: none;
@@ -112,9 +121,6 @@ nav ul.sublist li {
   margin-right: 1rem 0;
   color: #fff;
   padding: 1rem 0;
-}
-nav ul li.active > dropdown {
-  display: block;
 }
 .featured {
   background-image: url("../img/hero.jpg");
