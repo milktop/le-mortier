@@ -102,12 +102,14 @@ nav ul li .dropdown {
   overflow: hidden;
   max-height: 0;
   opacity: 0;
-  transition: max-height 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  visibility: hidden;
 }
 nav ul li .dropdown.active {
   max-height: 40rem;
   overflow: initial;
   opacity: 1;
+  visibility: visible;
 }
 nav ul.sublist {
   list-style-type: none;
